@@ -1,0 +1,88 @@
+body, html {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 4fr;
+    grid-template-areas: 
+        "navigation"
+        "header"
+        "article"
+        "footer"; 
+}
+
+.nav {
+    grid-area: navigation; 
+}
+
+.header {
+    grid-area: header; 
+}
+
+.article {
+    grid-area: article; 
+    display: grid; 
+    grid-template-columns: 1fr 423px 1fr;
+    grid-template-rows: 1fr 423px 1fr;
+    grid-template-areas: 
+        "a instructions c"
+        "highScores game c"
+        "highScores timer c";
+}
+    .highScore {
+        grid-area: highScores; 
+        margin: 0 auto; 
+        text-align: center;
+        font-size: 2em; 
+    }
+        #scores {
+            font-size: 0.5em; 
+        }
+        
+    .gameInstructions {
+        grid-area: instructions;
+        text-align: center;
+        font-size: 2em; 
+        font-family: sans-serif;
+        column-rule: solid 5px; 
+    }
+    .gameTimer {
+        grid-area: timer;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 1em; 
+        column-rule: solid 5px; 
+    }
+    .memoryGame { 
+        grid-area: game;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 0 auto; 
+        border: 2px solid #989898;
+        border-radius: 10px; 
+        grid-gap: 5px;
+        background-color;
+        width: 415px; 
+        height: 415px; 
+    }
+ 
+
+.footer {
+    grid-area: footer; 
+}
+
+/* JS FUNCTIONS */
+
+.pictures {
+    height: 100px; 
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px; 
+    opacity: 0; 
+}

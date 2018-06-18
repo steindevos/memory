@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory</title>
+    <link href='style.css' type="text/css" rel='stylesheet'>
+</head>
+    
+<body>
+    <div class='container'>
+        <div class='nav'>
+            <p></p>
+        </div>
+        
+        <div class='header'>
+            <p class="headertext"></p>
+        </div>
+        
+        <div class='article'>
+            <div class='highScore'>
+                <p>Highscores</p>
+                <p id='scores'></p>
+            </div>
+            <div class='gameInstructions'><p id='instructions'>Select a picture</p></div>
+            <div class='memoryGame' id='game'></div>
+            <div class='gameTimer'>
+            <input type = "button" value="Start the game" onclick="startGame('display')"/>
+                </br>
+            <p id='timer'>0</p>
+            </div>
+        </div>
+        
+        <div class='footer'>
+            <p></p>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+    
+</html>
